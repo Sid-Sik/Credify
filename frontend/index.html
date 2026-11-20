@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credify</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── SCREEN 1: OTP ──────────────────────────────────── -->
+  <div id="otpScreen" class="screen">
+    <div class="auth-card">
+      <div class="auth-logo">Credify</div>
+      <p class="auth-subtitle">India's smartest loan assistant</p>
+
+      <div id="phoneSection">
+        <label class="auth-label">Enter your phone number</label>
+        <input type="text" id="phoneInput" class="auth-input" placeholder="10 digit mobile number" maxlength="10" />
+        <button id="sendOtpBtn" class="auth-btn">Send OTP</button>
+      </div>
+
+      <div id="otpSection" style="display:none;">
+        <label class="auth-label">Enter OTP sent to your number</label>
+        <input type="text" id="otpInput" class="auth-input" placeholder="Enter 4 digit OTP" maxlength="4" />
+        <button id="verifyOtpBtn" class="auth-btn">Verify OTP</button>
+        <p id="otpMessage" class="otp-message"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ── SCREEN 3: CHAT ─────────────────────────────────── -->
+  <div id="chatScreen" class="screen" style="display:none;">
+    <header class="header">
+      <div class="header-left">
+        <span class="logo">Credify</span>
+      </div>
+      <div class="header-right">
+        <span class="status-dot"></span>
+        <span class="status-text">Aria is online</span>
+      </div>
+    </header>
+
+    <main class="chat-container">
+      <div class="chat-window" id="chatWindow">
+      </div>
+    </main>
+
+    <footer class="input-area">
+      <input type="text" id="userInput" class="input-box" placeholder="Type your message..." autocomplete="off" />
+      <button id="sendBtn" class="send-btn">Send</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
